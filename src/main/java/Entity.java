@@ -10,7 +10,6 @@ public class Entity {
     private int healCounter = 0;
     private boolean lifeStatus = true; // Статус жизни
 
-    // Если защищающийся умер, то вернет true
     public void Punch(Entity defender){
         Random random = new Random();
         int attackModifier = this.attack - defender.armor + 1;
